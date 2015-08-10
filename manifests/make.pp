@@ -23,6 +23,6 @@ class common_packages::make {
             }
         }
         'Darwin': {}
-        default: { unimplemented() }
+        default: { fail "unimplemented on ${::osfamily}" }
     }
 }

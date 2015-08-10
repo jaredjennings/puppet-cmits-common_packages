@@ -21,6 +21,6 @@ class common_packages::unzip {
             }
         }
         'Darwin': {}
-        default: { unimplemented() }
+        default: { fail "unimplemented on ${::osfamily}" }
     }
 }
